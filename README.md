@@ -6,6 +6,21 @@ The system utilizes a denoised weak-supervision pipeline: raw text is encoded in
 
 ---
 
+## Live Application Demo
+
+The production triage engine is deployed and accessible online:
+
+- **Live App URL:** [support-ticket-classifier.streamlit.app](https://support-ticket-classifier-gisma.streamlit.app/)
+
+### What You Can Test in the Live Demo
+
+- **Real-time Department Routing:** Submit natural language customer complaints to classify them across 5 organizational units (Finance & Billing, Technical Support, Account Access & Security, Customer Retention & Cancellation, and Marketing & Sales).
+- **Zero-Shot Semantic Generalization:** Test paraphrased queries with synonyms (e.g., "reimburse deduction" or "misplaced credentials") without relying on exact keyword matching.
+- **Automated SLA Assignment:** View real-time urgency tiers derived from sentiment and critical failure tokens.
+- **Interactive Triage Queue:** Inspect class probability distributions and watch newly routed tickets populate the operational dispatch log.
+
+---
+
 ## Project Overview
 
 Public customer support datasets often contain synthetic noise, template placeholders, and label-target misalignments. This project addresses those data quality challenges directly through programmatic weak supervision and dense representation learning, moving beyond brittle exact-token matching (TF-IDF) to achieve zero-shot semantic generalization.
